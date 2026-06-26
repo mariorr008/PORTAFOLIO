@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi porfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body >
+    <div class="stars"></div>
+    <header>
+    <nav class="nav-container">
+        <!-- Logo -->
+        <a href="#" class="nav-logo">
+            <span>Dev<span class="gradient-text">Mario</span></span>
+        </a>
+
+        <!-- Enlaces -->
+        <ul class="nav-menu">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+
+        <!-- Status -->
+        <div class="nav-right">
+            <div class="status-pill">
+                <div class="status-dot"></div>
+                    <span>Disponible</span>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <section class="hero-section">
+    <div class="hero-content">
+        <!-- Lado Izquierdo: Texto y Botones -->
+        <div class="hero-text" data-aos="fade-right">
+            <h1 class="hero-title">
+                Software<br>
+                <span class="gradient-text">Developer</span>
+            </h1>
+            <p class="hero-subtitle">Desarrollador Crativo |</p>
+            <p class="hero-description">
+                Soy <strong>Mario Rojas</strong>, desarrollador de software en formación con una gran pasión por la tecnología, el desarrollo y la resolución de problemas. Mi objetivo es convertir ideas en proyectos reales mientras continúo creciendo profesionalmente en el mundo de la programación.
+            </p>
+
+            <div class="hero-btns">
+                <a href="#projects" class="btn-blue">Ver Proyectos ↗</a>
+                <a href="#contact" class="btn-outline">Hablemos ✉</a>
+            </div>
+
+
+        </div>
+
+        <!-- Lado Derecho: Ventana de Código -->
+        <div class="code-window" data-aos="fade-left">
+            <div class="window-header">
+                <div class="dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="file-name">portfolio.js</span>
+            </div>
+            <div class="code-content">
+                <pre><code>
+        <span class="keyword">const</span> <span class="variable">Developer</span> = {
+        name: <span class="string">"Mario Rojas"</span>,
+        role: <span class="string">"Software Developer"</span>,
+        passion: <span class="string">"create innovative solutions"</span>,
+        
+        skills: [ <span class="string">"Python"</span>, <span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JavaScript"</span>, <span class="string">"SQL"</span> ],
+        status: <span class="string">"Building..."</span>
+        }
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="about" class="about-section">
+
+        <!-- FOTO IZQUIERDA -->
+        <div class="about-image" data-aos="fade-right">
+
+            <div class="image-frame">
+                <img src="img/Dev.jpeg" alt="Mario Rojas">
+            </div>
+
+        </div>
+
+        <!-- TEXTO DERECHA -->
+        <div class="about-content" data-aos="fade-left">
+
+            <span class="about-tag">SOBRE MI</span>
+
+            <h2 class="about-title">
+                Apasionado por construir
+                <span class="gradient-text">Experiencias</span>
+            </h2>
+
+            <p class="about-description">
+                Soy un desarrollador en formación apasionado por la tecnología, la programación y el aprendizaje continuo. Actualmente estudio en Campuslands, donde desarrollo proyectos que fortalecen mis habilidades técnicas y mi capacidad para resolver problemas.
+                Además del desarrollo de software, me interesa el eCommerce y el emprendimiento digital. Me gusta explorar cómo la tecnología puede transformar ideas en soluciones reales y generar nuevas oportunidades de negocio.
+            </p>
+
+            <!-- FORTALEZAS -->
+            <div class="strengths">
+
+                <div class="strength-card">
+                    💻 Desarrollador
+                </div>
+
+                <div class="strength-card">
+                    🧠 Solucion a problemas
+                </div>
+
+                <div class="strength-card">
+                    📚 Aprendiendo constantemente
+                </div>
+
+                <div class="strength-card">
+                    ⚡ Adaptabilidad
+                </div>
+
+                <div class="strength-card">
+                    🤝 Trabajo en equipo
+                </div>
+
+                <div class="strength-card">
+                    🚀 Siempre motivado
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="skills" class="skills-section">
+
+    <div class="skills-header" data-aos="fade-up">
+        <span class="skills-tag">MIS SKILLS</span>
+
+        <h2 class="skills-title">
+            Tecnologias I
+            <span class="gradient-text">Trabajo con:</span>
+        </h2>
+
+        <p class="skills-description">
+            Tecnologías y herramientas que utilizo para construir soluciones digitales modernas, escalables y eficientes.
+        </p>
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <img src="img/descarga.png" alt="Python">
+            <h3>Python</h3>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/html.png" alt="HTML">
+            <h3>HTML</h3>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/css.png" alt="CSS">
+            <h3>CSS</h3>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/js.png" alt="JavaScript">
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/sql2.png" alt="SQL">
+            <h3>SQL</h3>
+        </div>
+
+        <div class="skill-card">
+            <img src="img/git.png" alt="Git">
+            <h3>Git</h3>
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+<section id="projects" class="projects-section">
+
+    <div class="projects-header" data-aos="fade-up">
+
+        <span class="projects-tag">MIS PROYECTOS</span>
+
+        <h2 class="projects-title">
+            <span class="gradient-text">Projectos</span>
+            Destacados
+        </h2>
+
+        <p class="projects-description">
+            Aquí hay algunos proyectos en los que aplico desarrollo de software, tecnologías web y habilidades de resolución de problemas.
+        </p>
+
+    </div>
+
+    <div class="projects-container" data-aos="fade-up">
+
+        <div class="projects-grid">
+
+            <!-- PROYECTO 1 -->
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="img/Inventario.png" alt="Portfolio Website">
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        LOGICA DE INVENTARIO
+                    </span>
+
+                    <h3 class="project-title-card">
+                        GESTION DE INVENTARIO
+                    </h3>
+
+                    <p class="project-description-card">
+                        En este programa se da solucion a una problematica entre vecinos, haciendo un sistema de gestion de herramientas para saber que herramientas estan disponibles o que estado actual tienen.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>PYTHON</span>
+                    </div>
+
+                    <a href="https://github.com/mariorr008/GestionDeHerramientas.git"
+                       target="_blank"
+                       class="project-button">
+
+                        💻 Ver en GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PROYECTO 2 -->
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="img/Patitas.png" alt="Task Manager">
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        PAGINA WEB
+                    </span>
+
+                    <h3 class="project-title-card">
+                        PATITAS FELICES
+                    </h3>
+
+                    <p class="project-description-card">
+                        Se desarrollo una pagina web para una fundacion de animales, en la cual se puede ver informacion de la fundacion, los animales que estan en adopcion y un formulario para poder adoptar a un animal.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <a href="https://github.com/mariorr008/PatitasFelices.git"
+                       target="_blank"
+                       class="project-button">
+
+                        💻 Ver en GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PROYECTO 3 -->
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="img/Rutas.png" alt="Database Project">
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        LOGICA DE RUTAS
+                    </span>
+
+                    <h3 class="project-title-card">
+                        GESTION DE RUTAS ESCOLARES
+                    </h3>
+
+                    <p class="project-description-card">
+                        Se desarrollo una interfaz para poder gestionar rutas escolares, se puede crear o eliminar rutas, ver las rutas existentes y añadir o ver los estudiantes que estan en cada ruta.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="https://github.com/mariorr008/GestionRutasKids.git"
+                       target="_blank"
+                       class="project-button">
+
+                        💻 Ver en GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+    <section id="contact" class="contact-section">
+
+        <div class="contact-container">
+
+        <!-- LADO IZQUIERDO -->
+
+        <div class="contact-info" data-aos="fade-right">
+
+            <h2 class="contact-title">
+                ¿Tienes un proyecto en mente?
+            </h2>
+
+            <p class="contact-description">
+                Estoy siempre abierto a discutir nuevas oportunidades,
+                ideas creativas o proyectos ambiciosos.
+            </p>
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    @
+                </div>
+
+                <div>
+                    <span>EMAIL</span>
+                    <h4>marioalr8@gmaail.com</h4>
+                </div>
+
+            </div>
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <div>
+                    <span>UBICACIÓN</span>
+                    <h4>Santander - Colombia</h4>
+                </div>
+
+            </div>
+
+            <div class="social-section">
+
+                <span>SÍGUEME EN REDES</span>
+
+                <div class="social-buttons">
+
+                    <a href="https://github.com/mariorr008" target="_blank">
+                        <img src="img/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://linkedin.com/in/TU-USUARIO" target="_blank">
+                        <img src="img/social.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://instagram.com/mariorr__15" target="_blank">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- LADO DERECHO -->
+
+        <form class="contact-form" data-aos="fade-left" action="https://formspree.io/f/xzdlrjbk" method="POST">
+
+            <label for="name">Nombre Completo</label>
+            <input id="name" name="name" type="text" placeholder="Nombre y Apellido" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input id="email" name="email" type="email" placeholder="Correo Electrónico" required>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+
+            <button type="submit">
+                Enviar Mensaje ➤
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<footer class="footer" data-aos="fade-up">
+
+    <div class="footer-content">
+
+        <div class="footer-left">
+            <h3>Mario Rojas</h3>
+        </div>
+
+        <div class="footer-center">
+            <p>© 2026 Mario Rojas. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer-right">
+
+            <a href="https://github.com/mariorr008" target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://linkedin.com/in/mariorr008" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="https://instagram.com/mariorr__15" target="_blank">
+                Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            offset: 100,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+
+        const form = document.querySelector('.contact-form');
+
+        if (form) {
+            form.addEventListener('submit', function () {
+                setTimeout(() => {
+                    form.reset();
+                }, 100);
+            });
+        }
+    </script>
+</body>
+
+</html>

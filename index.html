@@ -8,7 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body >
+<body>
     <div class="stars"></div>
     <header>
     <nav class="nav-container">
@@ -16,6 +16,12 @@
         <a href="#" class="nav-logo">
             <span>Dev<span class="gradient-text">Mario</span></span>
         </a>
+
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         <!-- Enlaces -->
         <ul class="nav-menu">
@@ -472,12 +478,33 @@
         });
 
         const form = document.querySelector('.contact-form');
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navContainer = document.querySelector('.nav-container');
+        const navMenu = document.querySelector('.nav-menu');
 
         if (form) {
             form.addEventListener('submit', function () {
                 setTimeout(() => {
                     form.reset();
                 }, 100);
+            });
+        }
+
+        if (menuToggle && navContainer && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                const isOpen = navContainer.classList.toggle('nav-open');
+                menuToggle.classList.toggle('active', isOpen);
+                menuToggle.setAttribute('aria-expanded', String(isOpen));
+                navMenu.classList.toggle('mobile-open', isOpen);
+            });
+
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navContainer.classList.remove('nav-open');
+                    menuToggle.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    navMenu.classList.remove('mobile-open');
+                });
             });
         }
     </script>
